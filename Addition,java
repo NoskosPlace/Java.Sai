@@ -1,0 +1,30 @@
+public class Addition { 
+
+    public int a;
+    public int b;
+      
+    public int subtraction(){
+        return a - b;
+    }
+    public int addition(){
+        return a + b;
+    }     
+    public int division(){
+        return a / b;
+    }     
+    public int multiplication(){
+        return a * b;
+    }  
+
+  public static void main(String[] args) {
+  
+  Addition newInstanceObject = new Addition();
+    newInstanceObject.a=100;
+    newInstanceObject.b=50;
+
+     System.out.println(newInstanceObject.subtraction());
+     System.out.println(newInstanceObject.addition());
+     System.out.println(newInstanceObject.division());
+     System.out.println(newInstanceObject.multiplication());
+  }
+}
