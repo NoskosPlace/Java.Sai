@@ -1,0 +1,34 @@
+import com.example.shapes.Circle;
+import com.example.shapes.Shapes;
+import com.example.shapes.Square;
+import com.example.tools.Hammer;
+import com.example.tools.Tools;
+import com.example.tools.Wrench;
+import com.example.math.MathOperations;
+import com.example.math.MathProperties;
+
+public class Main {
+    public static void main(String args[]) {
+        Shapes circle = new Circle();
+        Shapes square = new Square();
+
+        Tools hammer = new Hammer();
+        Tools wrench = new Wrench();
+
+        MathProperties math = new MathOperations();
+
+        System.out.println(math.getSquare(6));
+        System.out.println(math.getSquareRoot(6));
+        System.out.println(math.largestInteger(6, 7));
+
+        System.out.println(circle.getShape());
+        System.out.println(circle.getColor());
+        System.out.println(square.getShape());
+        System.out.println(square.getColor());       
+
+        System.out.println(hammer.getTool());
+        System.out.println(hammer.getSize());
+        System.out.println(wrench.getTool());
+        System.out.println(wrench.getSize());
+    }
+}
