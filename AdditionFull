@@ -1,0 +1,77 @@
+public class Addition { 
+
+    public int a;
+    public int b;
+      
+    public int subtraction(){
+        return a - b;
+    }
+    public int addition(){
+        return a + b;
+    }     
+    public int division(){
+        return a / b;
+    }     
+    public int multiplication(){
+        return a * b;
+    }  
+
+  public static void main(String[] args) {
+     //some type of if statement for checking if there is main args and then using those args to set the variable values.
+    
+
+//      int firstArg;
+// if (args.length > 0) {
+//     try {
+//         firstArg = Integer.parseInt(args[0]);
+//     } catch (NumberFormatException e) {
+//         System.err.println("Argument " + args[0] + " must be an integer.");
+//         System.exit(2);
+//     }
+// }
+
+     for (int i = 1; i < args.length; i++) {
+        System.out.println("The command line arguments are: " + args[i]);
+        int myArgument = parseInt(args[i]);
+       
+
+        // iterating the args array and printing
+        // the command line arguments
+        for (String val : args)
+            System.out.println("for line 26 value is " + val);
+           
+    }
+
+
+
+
+
+    // else
+    //     System.out.println("No command line "
+    //                        + "arguments found.");
+     //Can see the arguments when passing the arguements and printing them.
+    //  System.out.println(args[0]);
+    //  System.out.println(args[1]);
+    Addition newInstanceObject = new Addition();
+    newInstanceObject.a=100;
+    newInstanceObject.b=50;
+
+     System.out.println(newInstanceObject.subtraction());
+     System.out.println(newInstanceObject.addition());
+     System.out.println(newInstanceObject.division());
+     System.out.println(newInstanceObject.multiplication());
+  }
+}
+
+//command line doc i found and used : https://www.geeksforgeeks.org/ways-to-read-input-from-console-in-java/
+
+
+
+//scope(public|private|protected) (static-optional) return type(void|primitiveDataType|Array|Object methodName(parameters)
+
+// 1. Write a program with 2 global variables. Make these global variables a constant. Use these 2 global variables to 
+// perform addition, subtraction, multiplication, and division. Use an object.
+// Display the result in the console.
+	
+// a) Variation 1: If you were to provide the 2 variables as "command line arguments" to the program, how would you do it?
+// 	b) Variation 2: If you were to provide the 2 variables as an interactive input, how would you do it?
