@@ -1,0 +1,49 @@
+public class FizzyBuzzy {
+     public static void main(String[] args){
+         
+         for(int i = 0; i <= 100; i++){
+             if(i % 5 == 0 && i % 6 == 0){
+                 System.out.println(i + " buzz");
+             }else if(i % 2 == 0 && i % 3 == 0){
+                 System.out.println(i + " fizz");
+             }else{
+                 System.out.println(i + " no match");
+             }
+         }
+     }
+ }
+ 
+ 
+ /*
+ Write a program that iterates over 0 to 100.
+  If the loop variable is divisible by 2 AND 3, print "fizz".
+  else if the loop variable is divisible by 5 AND 6, print "buzz".
+  Else then print "no match".
+  Use for loop only.
+ */
+ 
+ 
+ 
+ /*
+ Homework questions.
+ - Why is overloading a concept in java. what is it used for. when would you use it?
+     - my initial thoughts from memory before researching
+         - overloading is having the ability to use the same methods with difference parameters. This will keep the list of methods small. cleaner less to remember. You would use this concept anytime you need to say hit a method with difference senarios(data).
+     - Research into answer
+         - basically what i said above. 2 or more methods with the same name and different arguments.
+ - Why does a public class have to be in its own file?
+     - my initial thoughts from memory before reseaching
+         - Class is a blueprint for object creation so 1 bluebrint per file. I dont actually know if thats right. but i feel thats somewhat right
+     - Research into answer
+         - non public classes can be seen multiples in a class cause its typically from packages and is being referenced. But Main class is the start of the program. If there is more than one then the compiler will poop the bed.
+ - Why does the java package name need to be all lowercase?
+     - my initial thoughts from memory before reseaching
+         - since it is a path and paths are not capitalized
+     - Research into answer
+         - package names are all lowercase to avoid conflicting with names of classes or interfaces.
+ - Why is interface required in java? Why is it used in java?
+     - my initial thoughts from memory before reseaching
+         - Interface is used as a contract to control classes. Classes if implementing the interface have to have minimum the set methods.
+     - Research into answer
+         - interfaces are like methods and variables. but the methods are adstract which means only method signature not body.  It is used to achieve total abstraction. 
+ */
