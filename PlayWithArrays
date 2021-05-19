@@ -1,0 +1,67 @@
+import java.lang.reflect.Array;
+
+public class PlayWithArrays {
+    public static void main(String[] args) {
+        int[] array1 = new int[]{9, 6, 7, 8, 9}; // array initialization during declaration.
+        int[] array2 = new int[]{1, 2, 3, 4, 5 };
+        int[] array3 = new int[]{2, 0, 9, 8, 7};
+        int[] array4 = new int[]{1, 3, 4, 5};
+        PlayWithArrays playWithArrays = new PlayWithArrays();
+        //assert playWithArrays.commonNumber(array1, array2) == 1;
+        //assert playWithArrays.commonNumber(array3, array4) == -1;
+        playWithArrays.commonNumber(array1, array2);
+        
+    }
+    /**
+     * A method that takes two arrays and returns the common integer.
+     * Note that the arrays may not be of the same length.
+     * @param array1
+     * @param array2
+     * @return common integer
+     */
+    public int commonNumber(int[] array1, int[] array2) {   
+               
+        for (int i = 0; i <= array1.length; i++){
+            System.out.println("top level " + i);
+            System.out.println();
+
+            for (int j = 0; j <= array2.length; j++){
+                System.out.println("second level " + j);
+                System.out.println();
+
+                if (array1[i] == array2[j]){
+                    System.out.println("array match array 1 key = " + i + " /value = " + array1[i] + " array 2 key = " + j + " /value = " +array2[j]);
+                    
+                }else {
+                    System.out.println("array no match array 1 key = " + i + " /value = " + array1[i] + " array 2 key = " + j + " /value = " +array2[j]);
+                    
+                }
+            }break;
+           
+           
+        }
+        return 12324;
+    }
+}
+
+
+//class homework due thursday 5/20/21
+
+/**Complete the logic in the method, commonNumber so that the method is able to compare elements in array1, 
+ * and elements in array2 then return the common number. If there is no common number, then return -1. You 
+ * may assume that there is online 1 common integer between the two arrays. DO NOT CHANGE THE METHOD SIGNATURE. 
+ * DO NOT CHANGE THE MAIN METHOD. 
+ * 
+ * Oh, to run this code:
+    javac PlayWithArrays.java
+   followed by:
+    java -ea PlayWithArrays
+   If your solution is correct, you should not see something like
+    Exception in thread "main" java.lang.AssertionError
+	at PlayWithArrays.main(PlayWithArrays.java:13)
+    
+    for (int i = 0; i <= Array.length(array2); i++){
+            System.out.println(i);
+            for(int a = 0; a <= Array.length(array1); i++){
+                System.out.println(a);
+    **/
