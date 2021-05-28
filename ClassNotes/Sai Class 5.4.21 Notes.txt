@@ -1,0 +1,91 @@
+
+
+public class Sai Class 5.4.21 Notes {
+    https://jamboard.google.com/d/1FDXJbpsILA5sn9I13gBDzVP5Omac682w7kcuVp61H1g/viewer?f=3
+
+    Agenda
+
+    - Homework  ,/
+    - Scanner; ,/  Constructor
+    - Command Line Arguments  //next class
+    - if - else conditions   ,/
+    - Loops;  ,/    Arrays    //next class
+
+
+        If - else conditions  /  alternate is switch cases
+        - Branching 
+
+        if(should be a boolean(true or false)){
+            //code
+        } else {
+            //code
+        }
+
+        operators of if/else '<', '>', '==', '||', '&&' 
+        not to << or >> is bit shifting
+
+        if(condition){
+            if(condition 2) {//nested if
+            return 0;
+            }
+            return 1;
+        }
+
+
+        if,  else if is a or check
+        if, if, if is a and check
+
+
+//WAP (Write a Program)  SaiJava/Project/fizzbuzz.java
+If given integer is divisible by 2 then print fizz
+else if given integer is divisible by 3 then print buzz
+else print no match
+
+
+Scanner 
+
+in.built 
+
+import java.util.scanner;
+
+you need an object of scanner
+Scanner in = new Scanner(System.in);
+input stream (read steram of bites into memory)
+
+inside a method
+if(in.hasNextInt()){
+    int num1 = in.nextInt();
+    int num2 = in.nextInt();
+}
+//lots of work so need to write in a loop
+
+Loops
+
+For loop, While loop, do while
+
+for loop example
+loop variable initilization expression     int a =0;
+termination expression                     a < 0 | a > 0 | a == 0;
+increament/decrement expression            a++ | aa+ | +aa              a++ = (a + 1)
+
+for(intaliztion expression; termination expression; increment/decrement expression){
+    //for loop body
+}
+
+for(int i = 0; i < 10; i++){
+    //code block
+    System.out.println(i);
+}
+    //upward counter
+
+for(int i = 10; i >= 0; i--){
+    System.out.println(i);
+}
+
+//question #1 how do make an infinite loop?
+
+
+
+
+
+}

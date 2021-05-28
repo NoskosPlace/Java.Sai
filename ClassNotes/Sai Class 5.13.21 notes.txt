@@ -1,0 +1,98 @@
+Sai Class 5.13.21 notes
+
+https://jamboard.google.com/d/10kE7q4L6LBMhDtU-qkJf0TQGAdNmUyOiE2QyiCmlpC4/viewer
+
+Agenda
+    - Homework   ,/
+    - Command line arguments (cla)
+    - constructors
+    - Loops
+    - Arrays
+
+--command line args
+
+if(args != null && args.length == 2){
+    args[0] to integer
+    args[1] to integer
+} else {
+    S.O.P(insufficient params)
+}
+
+
+--constructors
+
+public class Addition{}
+
+public class Addition{
+    public Addition(){
+
+    }
+}
+
+#Abstraction 
+
+scanner 
+system.in
+
+dependency injection = 
+
+Getter Method & Setter Method
+
+private int sum;
+
+public int getSum(){
+    retunr sum;
+}
+public void setSum(int sum){
+    this.sum = sum;
+}
+
+
+
+---- loops (continuted)
+
+do while loops
+
+int i = 0;
+do {
+    S.O.P(i);
+    i++;
+} while(i < 10) {
+
+}
+
+
+While loops
+
+int i = 0
+while(i < 10){
+    S.O.P(i);
+    i++;
+}
+
+downward counter
+
+
+
+
+
+
+
+
+
+class exercise  ClassProject.java in Sai class projects folder
+
+class 
+5 class variables
+constructors to initialize
+print value each variable with getter
+
+
+downward counter  DownWard.java
+create downward counter and infinite counter
+
+
+
+
+
+

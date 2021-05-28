@@ -1,0 +1,69 @@
+Jamboard https://jamboard.google.com/d/1i0wupfk-GuSBmCI-tcaFq_lB8G9K0oY2STmCNHABYM0/viewer
+
+**class project file Fruits.java
+
+Agenda
+string Class
+collections - package
+for-each loop
+exception handling
+
+Strings -----
+Can store any data.
+-> max size is what your machine can handle.
+
+example: String aStringName = "Hello World"
+
+php / java double quotes is prefered 
+javascript / python single quotes is prefered
+
+Join strings together
+(concat)
+String ab = "firstString" + "secondString";
+
+StringBuilder sb = new StringBuilder();
+//string builder is a container for a queue
+first in first out
+"fifo"
+"last in first out"
+"lifo"
+
+sb.append("first");
+sb.append("second);
+sb.toString();
+
+toString() hashCode()
+
+public class fruits{
+    private String fruit = "Mango";
+    private String price = "$5";
+    private String quantity = "1kg";
+}
+
+public String toString(){
+    return "quantity: " + quantity + "of" + fruit + " costs " + price;
+
+} fruits fruits = new Fruits();
+    S.O.P(fruites.toString());
+
+
+Nosko Facepalm
+setting string with String name = "value" is creating a new variable not setting the existing variable. 
+
+
+hashCode();
+
+variable1.equals(variable2);
+//Checks if variable 1 and variable 2 are equal. 
+//returns a boolean 
+
+
+
+
+
+
+
+
+
+
+
