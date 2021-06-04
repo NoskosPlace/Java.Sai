@@ -1,0 +1,117 @@
+Sai Class 6.3.21 Notes
+
+https://jamboard.google.com/d/1ELH8ayDQduWEBRlvOF-ZnzvIaPZfaA-F4ZaZL-BBFZE/viewer?f=1
+
+Agenda
+- Recursion
+- Error Handling
+
+
+Exception Handling
+- Used to Guard against unknown/undesireable behavior
+- There are some edge cases that can happen during the exception of a program
+    - when these negative cases occur, your code must "hanlde them"
+
+
+    try{
+        //code block with business logic were things could go wrong
+            line 1 Runs
+            line 2 exception
+            line 3 doesnt run
+    } Catch(Exception e){
+        //line 4 - exception happens here
+        log.error(blah blah blah)
+    }
+
+
+    ->API
+        -Post / contact()
+        API reaches to domain layer 
+
+    ->Domain (business logic)
+    domain reaches to database layer
+
+    ->Data ( database)
+
+    If database throws error it should spit back to domain and domain should spit back to API and back to the user. 
+
+
+    Create your own exceptions
+    Data layer
+    public class rest API Exception extends runtimeException{
+
+    }
+   -> Data layer -  throw new RestApiException();
+ 
+   -> Domain layer - 
+   try{
+       //call to data layer
+   }catch (RestApiException){
+       throw new contact creation exception();
+   }
+   catch (database unreachable e){
+
+   }
+    catch (exception ez){
+
+    }
+   FInally{
+
+   }
+
+
+public class contact creation exception extend runtime exception{
+
+}
+
+
+try{
+    String abc = "abc";
+    int a = Integer.parseInt(abc);
+    }catch(NumberFormatException){
+
+    }
+
+--throws key word example:  @sneakyThrows
+public int getSum(String a, String b)throws NumberFormatException{
+    int one = Integer.parseInt(a);
+    int two = Integer.parseInt(b);
+    return one + two;
+}
+
+
+Try-with-resources
+--short cut for finally catch block - 
+
+END EXCEPTION Handling
+
+
+Start Inception which is Recursion
+
+method is calling itself
+
+public int sum(int a){
+   while(a<100){
+       a=a+a;
+       sum(a;)
+   }retunr a;
+}
+main public void main(String[] args){
+    sum(5);
+    //returns 80
+}
+
+sum(5);
+sum(10);
+sum(20);
+sum(40);
+sum(80);
+
+recurision takes 2n mamory. so 2 times the memory
+0(2n) // big-O NumberFormatException
+
+LeetCode search for recursion. 
+
+
+
+
